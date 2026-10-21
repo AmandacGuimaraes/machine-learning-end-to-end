@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: machine-learning-end-to-end
+Version: 0.1.0
+Summary: Template reproduzivel para classificacao tabular
+Requires-Python: <3.14,>=3.11
+Requires-Dist: pandas>=2.1
+Requires-Dist: numpy>=1.26
+Requires-Dist: scikit-learn>=1.4
+Requires-Dist: matplotlib>=3.8
+Requires-Dist: scipy>=1.11
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: joblib>=1.3
+Provides-Extra: dev
+Requires-Dist: pytest>=8; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
+Requires-Dist: jupyter>=1.0; extra == "dev"
+Provides-Extra: automl
+Requires-Dist: autogluon.tabular>=1.2; extra == "automl"
+Provides-Extra: api
+Requires-Dist: fastapi>=0.110; extra == "api"
+Requires-Dist: uvicorn>=0.27; extra == "api"

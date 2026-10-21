@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-end-to-end-template"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = ["pandas>=2.1,<3", "numpy>=1.26,<3", "scikit-learn>=1.4,<2", "scipy>=1.11,<2", "matplotlib>=3.8,<4", "seaborn>=0.13,<1", "PyYAML>=6,<7", "joblib>=1.3,<2", "fastapi>=0.110,<1", "uvicorn>=0.29,<1", "pydantic>=2,<3"]
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "ruff>=0.6,<1"]
+automl = ["autogluon.tabular>=1.2,<2"]
+optimize = ["optuna>=3.6,<5"]
+explain = ["shap>=0.45,<1"]
+mlops = ["mlflow>=2.15,<4", "evidently>=0.5,<1"]
+[tool.setuptools.packages.find]
+include = ["src*"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

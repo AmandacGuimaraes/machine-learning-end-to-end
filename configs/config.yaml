@@ -1,0 +1,6 @@
+data_path: data/raw/dataset.csv
+target: performance_level
+positive_class: Alto desempenho
+test_size: 0.2
+random_state: 42
+model_path: models/baseline.joblib

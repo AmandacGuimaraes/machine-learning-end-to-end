@@ -1,0 +1,17 @@
+project:
+  task: classification
+data:
+  path: data/sample/classification.csv
+  target: target
+  id_column: null
+  date_column: null
+validation:
+  strategy: stratified
+  test_size: 0.20
+  random_state: 42
+model:
+  algorithm: random_forest
+  optimize: false
+  automl: false
+outputs:
+  directory: artifacts
